@@ -1,0 +1,108 @@
+/* SignIn.css */
+
+/* Container holding the entire sign-in page */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  /* Left side image */
+  .signin-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  }
+  
+  .signin-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+  
+  /* Right side form */
+  .signin-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signin-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: blue;
+  }
+  
+  .signin-btn:hover {
+    background-color: #218838;
+  }
+  
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .signin-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .signin-image {
+      margin-bottom: 20px;
+      border: 1px solid red;
+      display: none;
+    }
+  
+    .signin-form {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
